@@ -1,35 +1,63 @@
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 px-6 max-w-5xl mx-auto">
-      <h2 className="text-3xl font-semibold mb-10">
+    <section
+      id="experience"
+      className="
+      relative z-10 py-28 px-6
+      max-w-5xl mx-auto
+      border-t border-slate-200 dark:border-slate-800
+      "
+    >
+      <h2 className="text-4xl font-semibold mb-14 text-center tracking-tight text-slate-900 dark:text-white">
         Professional Experience
       </h2>
 
-      <div className="bg-white p-8 rounded-lg shadow-sm border">
-        <h3 className="text-xl font-semibold">
-          Software Engineer
-        </h3>
-        <p className="text-gray-500 mb-4">
-          ASP OL Media Pvt. Ltd. | July 2023 – Sept 2024
-        </p>
+      <div
+        className="
+        p-10 md:p-12
+        rounded-2xl
+        bg-white/50 dark:bg-gray-800/50
+        backdrop-blur-md
+        border border-slate-200 dark:border-slate-700
+        shadow-md
+        transition-all duration-500
+        hover:shadow-lg
+        "
+      >
+        <div className="mb-6">
+          <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
+            Software Engineer
+          </h3>
 
-        <ul className="list-disc list-inside space-y-3 text-gray-600">
+          <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
+            ASP OL Media Pvt. Ltd. · July 2023 – Sept 2024
+          </p>
+        </div>
+
+        {/* <ul className="mt-6 space-y-4 text-slate-700 dark:text-slate-300">
+          <li className="flex gap-3">
+            <span className="mt-2 w-1.5 h-1.5 bg-slate-400 dark:bg-slate-500 rounded-full"></span>
+            <span>Designed and implemented secure backend modules...</span>
+          </li>
+        </ul> */}
+
+
+        <ul className="space-y-4 text-slate-700 list-disc list-inside dark:text-slate-300 leading-relaxed">
           <li>
-            Developed backend modules using Spring Boot for authentication,
-            data persistence, and API integrations.
+            Designed and implemented secure backend modules using Spring Boot for authentication and data persistence.
           </li>
           <li>
-            Built dynamic frontend features using React and Redux,
-            improving UI performance by 25%.
+            Improved frontend performance by 25% through optimized rendering and state management.
           </li>
           <li>
-            Wrote automated tests with JUnit and Mockito to ensure stable releases.
+            Introduced automated testing practices using JUnit and Mockito to reduce regression defects.
           </li>
           <li>
-            Collaborated with QA and product teams to resolve production issues.
+            Collaborated cross-functionally to resolve production issues and improve system stability.
           </li>
         </ul>
       </div>
+
     </section>
   );
 }
